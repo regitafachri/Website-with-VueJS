@@ -1,0 +1,28 @@
+html, body {
+    margin: 5px;
+    padding: 0;
+}
+
+html, ::-webkit-textfield-decoration-container{
+    background-color: peachpuff;
+}
+
+html, h2{
+    color:orange;
+}
+
+html, ::-webkit-textfield-decoration-container, input, button{
+    border-color: grey;
+    color: grey;
+    block-size: 50px;
+}
+
+/* html, ::-webkit-textfield-decoration-container, input, button:hover{
+    border-color: lightgreen;
+    color: lightgreen;
+} */
+
+html, ::-webkit-textfield-decoration-container, header, a{
+    color: orange;
+    text-decoration-line: none;
+}

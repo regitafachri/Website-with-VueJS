@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="header" id="kepala">
+                <a href="">{{ delivery }}</a>
+                <a href="">{{ payment }}</a>
+                <a href="">{{ finish }}</a>
+            </div>
+            <div class="content" id="badan">
+                <h2> Delivery Details </h2>
+                <input type="checkbox"> Send as Dropshipper
+                <form id="coba" @submit="checkForm" action="/something" method="post" action="page2.html">
+  
+                  <p v-if="errors.length">
+                    <ul>
+                      <li v-for="error in errors">{{ error }}</li>
+                    </ul>
+                  </p>
+                  
+                  
+                  <table>
+                    <tr>
+                      <td><input type="email" name="email" id="email" placeholder="Email"></td>
+                      <td><input type="text" name="name" id="name" placeholder="Dropshipper Name"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" name="phone" id="phone" placeholder="Phone Number"></td>
+                      <td><input type="text" name="dropPhone" id="dropPhone" placeholder="Dropshipper Phone Number"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" name="address" id="address" placeholder="Delivery address"></td>
+                    </tr>
+                  </table>
+                
+                  <p>
+                    <input type="submit" value="Submit">  
+                  </p>
+                
+                </form>
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

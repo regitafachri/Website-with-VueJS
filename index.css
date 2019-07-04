@@ -1,0 +1,13 @@
+html, body {
+  margin: 5px;
+  padding: 0;
+}
+
+html, ::-webkit-textfield-decoration-container{
+  background-color: peachpuff;
+}
+
+html, ::-webkit-textfield-decoration-container, header, a{
+  color: orange;
+  text-decoration-line: none;
+}
